@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light jumbotron">
+    <a class="navbar-brand" href="#">Router-Project</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <!-- Home -->
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="home"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+  
+        <!-- All Courses DropDown -->
+        <li class="nav-item dropdown" id="myDropdown">
+          <a class="nav-link dropdown-toggle" routerLink="course" data-bs-toggle="dropdown">All Courses </a>
+          <ul class="dropdown-menu">
+            <li> <a class="dropdown-item" routerLink="mean">MEAN Stack </a></li>
+            <li> <a class="dropdown-item" routerLink="mern">MERN Stack &raquo; </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item"routerLink="mongo">Mongo</a></li>
+                <li><a class="dropdown-item" routerLink="express">Express</a></li>
+                <li><a class="dropdown-item" routerLink="node">Node </a>
+                </li>
+  
+  
+              </ul>
+            </li>
+            <li><a class="dropdown-item" routerLink="genai">Gen Ai </a></li>
+  
+          </ul>
+        </li> 
+  
+        <!-- Registration -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="register">Registration</a>
+        </li>
+  
+        <!-- Gallery -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="gallery">Gallery</a>
+        </li>
+  
+        <!-- Contact Us -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact">Contact Us</a>
+        </li>
+
+        <!-- Rest Call -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="restcall">REST Call</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row col-12" >
+        <div class="card col-4" style="width: 18rem;" *ngFor = 'let img of appList'>
+            <img [src] = 'img.url'>
+           
+          </div>
+    </div>
+</div>
+
+<div [ngStyle]="{'color': 'blue'}">
+    ngStyle demo
+</div>
+
+<div>
+    <button (click)="showAlert()">
+        click me
+    </button>
+</div>
+
+<div>
+    <h1 [ngClass]="{available:isAvailable, unavailable: !isAvailable}">ng class</h1>
+</div>
